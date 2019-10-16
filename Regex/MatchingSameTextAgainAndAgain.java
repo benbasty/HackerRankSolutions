@@ -4,12 +4,12 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class MatchingOneOrMoreRepetitions {    
+public class MatchingSameTextAgainAndAgain {    
 
     public static void main(String[] args) {
         
         Regex_Test tester = new Regex_Test();
-        tester.checker("^[\\d]+[A-Z]+[a-z]+$"); // Use \\ instead of using \ 
+        tester.checker("^([a-z]\\w\\s\\W\\d\\D[A-Z][A-Za-z][aeiouAEIOU]\\S)\\1$"); // Use \\ instead of using \ 
     
     }
 }
